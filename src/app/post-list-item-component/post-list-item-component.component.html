@@ -4,8 +4,13 @@
   <div class="date text-black-50 font-italic float-right small">{{ postItem.created_at | date:'short' }}</div>
   <h4>{{ postItem.title }}</h4>
   <p>{{ postItem.content }}</p>
-  <div class="btn-toolbar">
-      <button type="button" class="btn btn-success" (click)="onIncrementLoveIt()">Love It</button>&nbsp;
-      <button type="button" class="btn btn-danger" (click)="onDecrementLoveIt()">Don't Love It</button>
+  <div class="btn-toolbar justify-content-between">
+      <div class="btn-group" role="group">
+          <button type="button" class="btn btn-success" (click)="onIncrementLoveIt(postItem)">Love It</button>
+          <button type="button" class="btn btn-danger" (click)="onDecrementLoveIt(postItem)">Don't Love It</button>
+      </div>
+      <div class="btn-group" role="group">
+          <button type="button" class="btn btn-danger btn-sm" (click)="onDeletePost(postItem)">Supprimer</button>
+    </div>
   </div>
 </li>

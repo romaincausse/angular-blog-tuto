@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import Post from './Post';
 
 @Component({
   selector: 'app-root',
@@ -8,13 +7,5 @@ import Post from './Post';
 })
 export class AppComponent {
 
-  postList: Array<Post>;
-
-  constructor() { 
-     this.postList = [
-      new Post('Premier post', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, assumenda.'),
-      new Post('Second post', 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, eius.'),
-      new Post('Un autre post', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, labore.'),
-    ];
-  }
+  constructor() {}
 }

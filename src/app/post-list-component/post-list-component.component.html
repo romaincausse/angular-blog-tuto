@@ -1,4 +1,5 @@
 <h3>Posts</h3>
+<a routerLink="/new" class="btn btn-success">Ajouter un post</a>
 <ul class="list-group component-post">
     <app-post-list-item-component *ngFor="let postItem of postList" [postItem]="postItem" ></app-post-list-item-component>
 </ul>
